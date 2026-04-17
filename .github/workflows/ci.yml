@@ -1,0 +1,35 @@
+name: Kernel CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Run Kernel
+        run: |
+          python run.py
+
+      - name: Run Router
+        run: |
+          python run_router_intelligent.py
+
+      - name: Run Simulation
+        run: |
+          python -c "from runtime.simulation import SimulationEngine; print(SimulationEngine().run(None,'test',{}))"
