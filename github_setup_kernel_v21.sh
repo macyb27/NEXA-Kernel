@@ -8,8 +8,8 @@ echo "[+] GitHub Kernel v21 Setup starting..."
 # CONFIG (EDIT THIS)
 # =========================
 REPO_NAME="nexa-kernel"
-GITHUB_USER="YOUR_GITHUB_USERNAME"
-EMAIL="YOUR_EMAIL"
+GITHUB_USER="macyb27"
+EMAIL="mrehberg@gmx.de"
 
 # =========================
 # INIT PROJECT
