@@ -1,5 +1,6 @@
 from observability.logger import Logger
 
+
 class Tracer:
     def __init__(self):
         self.logger = Logger()

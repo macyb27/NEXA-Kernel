@@ -1,5 +1,15 @@
+"""
+NEXA-Kernel v2.0 Core Versioning Module
+Execution contract versioning.
+"""
+
+__version__ = "2.0.6"
+
+
 class ExecutionContractVersion:
-    VERSION = "v20.6"
+    """Execution contract version tracker."""
+
+    VERSION = "v2.0.6"
 
     @staticmethod
     def validate():

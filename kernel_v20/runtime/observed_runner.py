@@ -1,6 +1,7 @@
 from core.kernel import Kernel
 from observability.tracer import Tracer
 
+
 class ObservedRunner:
     def __init__(self, kernel: Kernel):
         self.kernel = kernel
